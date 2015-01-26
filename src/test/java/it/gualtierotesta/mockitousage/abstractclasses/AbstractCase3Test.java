@@ -18,12 +18,16 @@ package it.gualtierotesta.mockitousage.abstractclasses;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.reflect.Whitebox;
 
 /**
  * Case 3 unit test
  *
  * @author Gualtiero Testa <www.gualtierotesta.it>
  */
+//@RunWith(PowerMockRunner.class)
+//@PrepareForTest(AbstractCase3.class)
 public class AbstractCase3Test {
 
     @Test
@@ -56,6 +60,18 @@ public class AbstractCase3Test {
         Mockito.doCallRealMethod().when(sut).methodToBeTested();
         Mockito.doCallRealMethod().when(sut).setCount(Mockito.anyInt());
         sut.setCount(15);
+        // when
+        String result = sut.methodToBeTested();
+        // then
+        Assert.assertEquals("Too many times", result);
+    }
+
+    @Test
+    public void testWithPowerMock() {
+        // given
+        AbstractCase3 sut = PowerMockito.mock(AbstractCase3.class);
+        PowerMockito.doCallRealMethod().when(sut).methodToBeTested();
+        Whitebox.setInternalState(sut, "count", 15);
         // when
         String result = sut.methodToBeTested();
         // then
