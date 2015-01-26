@@ -1,2 +1,8 @@
-# test-solutions
-Test Solutions Gallery using Java, jUnit, Mockito and PowerMock
+# Test Solutions Gallery (test-solutions)
+
+This project contains several testing solutions implemented using:
+
+- Plain Java
+- jUnit
+- Mockito
+- PowerMock
