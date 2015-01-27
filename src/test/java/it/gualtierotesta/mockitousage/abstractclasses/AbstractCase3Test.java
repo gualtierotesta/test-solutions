@@ -31,7 +31,7 @@ import org.powermock.reflect.Whitebox;
 public class AbstractCase3Test {
 
     @Test
-    public void testFalsePathWithCountLessThen10() {
+    public void testFalseTypeWithCountLessThen10() {
         // given
         AbstractCase3 sut = Mockito.mock(AbstractCase3.class);
         Mockito.doCallRealMethod().when(sut).methodToBeTested();
@@ -42,7 +42,7 @@ public class AbstractCase3Test {
     }
 
     @Test
-    public void testTruePathWithCountLessThen10() {
+    public void testTrueTypeWithCountLessThen10() {
         // given
         AbstractCase3 sut = Mockito.mock(AbstractCase3.class);
         Mockito.doCallRealMethod().when(sut).methodToBeTested();
