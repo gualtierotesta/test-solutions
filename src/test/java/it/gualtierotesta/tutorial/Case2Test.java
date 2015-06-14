@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Gualtiero Testa <www.gualtierotesta.it>.
+ * Copyright 2015 Gualtiero Testa www.gualtierotesta.it.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 /**
  * Unit test for case 2
  *
- * @author Gualtiero Testa <www.gualtierotesta.it>
+ * @author Gualtiero Testa www.gualtierotesta.it
  */
 @RunWith(MockitoJUnitRunner.class)
 public class Case2Test {

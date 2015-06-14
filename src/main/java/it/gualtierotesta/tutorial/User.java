@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Gualtiero Testa <www.gualtierotesta.it>.
+ * Copyright 2015 Gualtiero Testa www.gualtierotesta.it.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import java.util.Date;
 /**
  * POJO for logged users data
  *
- * @author Gualtiero Testa <www.gualtierotesta.it>
+ * @author Gualtiero Testa www.gualtierotesta.it
  */
 public class User {
 

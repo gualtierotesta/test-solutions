@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Gualtiero Testa <www.gualtierotesta.it>.
+ * Copyright 2015 Gualtiero Testa www.gualtierotesta.it.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,16 +18,16 @@ package it.gualtierotesta.tutorial;
 /**
  * Case 1 : a basic DAO as dependency
  *
- * @author Gualtiero Testa <www.gualtierotesta.it>
+ * @author Gualtiero Testa www.gualtierotesta.it
  */
 public class Case1Dao {
 
     /**
      * @return the number of the currently logged users
-     * @throws java.lang.Exception
+     * @throws java.lang.Exception in case of issues
      */
     public int countLoggedUsers() throws Exception {
-        // dummy impplementation
+        // dummy implementation
         return 0;
     }
 

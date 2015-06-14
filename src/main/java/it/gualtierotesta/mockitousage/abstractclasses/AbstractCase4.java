@@ -1,6 +1,6 @@
 /*
  /*
- * Copyright 2015 Gualtiero Testa <www.gualtierotesta.it>.
+ * Copyright 2015 Gualtiero Testa www.gualtierotesta.it.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ package it.gualtierotesta.mockitousage.abstractclasses;
 /**
  * Abstract class : case 1
  *
- * @author Gualtiero Testa <www.gualtierotesta.it>
+ * @author Gualtiero Testa www.gualtierotesta.it
  */
 public abstract class AbstractCase4 {
 
