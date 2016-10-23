@@ -10,6 +10,7 @@ dist
 hs_err_pid*
 ##NetBeans
 nb*.xml
+nbproject
 ## IntelliJ
 .idea
 *.iml
