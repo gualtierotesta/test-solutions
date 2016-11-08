@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>it.gualtierotesta</groupId>
-    <artifactId>parent</artifactId>
+    <artifactId>test-solutions</artifactId>
     <version>2.0.0</version>
     <packaging>pom</packaging>
     

@@ -13,22 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package it.gualtierotesta.testsolutions.mockito2.tutorial;
+package it.gualtierotesta.testsolutions.mockito2;
 
 /**
- * Case 1 : a basic DAO as dependency
+ * Case 2
  *
  * @author Gualtiero Testa www.gualtierotesta.it
  */
-public class Case1Dao {
+public class Case2 {
 
-    /**
-     * @return the number of the currently logged users
-     * @throws java.lang.Exception in case of issues
-     */
-    public int countLoggedUsers() throws Exception {
-        // dummy implementation
-        return 0;
+    private final Case2Dao dao;
+
+    public Case2(final Case2Dao pDao) {
+        this.dao = pDao;
+    }
+
+    public void newUser(String pName, String pIdUser) {
+        User user = new User(pName, pIdUser);
+        dao.saveNewLoggedUser(user);
     }
 
 }

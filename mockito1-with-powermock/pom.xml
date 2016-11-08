@@ -4,7 +4,7 @@
     
     <parent>
         <groupId>it.gualtierotesta</groupId>
-        <artifactId>parent</artifactId>
+        <artifactId>test-solutions</artifactId>
         <version>2.0.0</version>
     </parent>
     

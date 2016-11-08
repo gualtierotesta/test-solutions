@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package it.gualtierotesta.testsolutions.mockito2.tutorial;
+package it.gualtierotesta.testsolutions.mockito2;
 
 import java.util.Random;
 import static org.assertj.core.api.Assertions.assertThat;
