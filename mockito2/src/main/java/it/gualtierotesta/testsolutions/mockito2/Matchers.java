@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Gualtiero Testa www.gualtierotesta.it.
+ * Copyright 2016 Gualtiero Testa.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,19 +16,27 @@
 package it.gualtierotesta.testsolutions.mockito2;
 
 /**
- * Case 1 : a basic DAO as dependency
+ * ArgumentMatchers use cases example
  *
- * @author Gualtiero Testa www.gualtierotesta.it
+ * @author Gualtiero Testa <http://www.gualtierotesta.it>
  */
-public class Case1Dao {
+public class Matchers {
 
-    /**
-     * @return the number of the currently logged users
-     * @throws java.lang.Exception in case of issues
-     */
-    public int countLoggedUsers() throws Exception {
-        // dummy implementation
-        return 0;
+    private Dependency dependency;
+
+    public class Dependency {
+
+        public String toString(int calc) {
+            return "something";
+        }
     }
 
+    public Matchers(Dependency dependency) {
+        this.dependency = dependency;
+    }
+
+    public String info(int num) {
+        int calc = num * 2;
+        return dependency.toString(calc).toUpperCase();
+    }
 }
