@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.mutabilitydetector</groupId>
             <artifactId>MutabilityDetector</artifactId>
-            <version>0.9.6</version>
+            <version>0.10.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
