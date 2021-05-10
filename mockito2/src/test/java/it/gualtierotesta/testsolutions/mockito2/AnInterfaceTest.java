@@ -15,13 +15,14 @@
  */
 package it.gualtierotesta.testsolutions.mockito2;
 
-import java.util.Arrays;
-import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.mockito.ArgumentMatchers;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Unit Test: how to mock an interface

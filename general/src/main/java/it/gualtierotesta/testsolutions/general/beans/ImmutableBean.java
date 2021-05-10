@@ -45,8 +45,8 @@ public final class ImmutableBean implements Serializable {
     @Override
     public String toString() {
         return "ImmutableBean{" +
-                "aStr='" + aStr + '\'' +
-                ", anInt=" + anInt +
-                '}';
+            "aStr='" + aStr + '\'' +
+            ", anInt=" + anInt +
+            '}';
     }
 }

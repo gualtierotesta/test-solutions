@@ -19,9 +19,9 @@ public class LombokImmutableBeanTest {
     @Test
     public void testClassEqualsHashCode() {
         new EqualsTester()
-                .addEqualityGroup(LombokImmutableBean.of("hi", 5), LombokImmutableBean.of("hi", 5))
-                .addEqualityGroup(LombokImmutableBean.of(null, 0), LombokImmutableBean.of(null, 0))
-                .testEquals();
+            .addEqualityGroup(LombokImmutableBean.of("hi", 5), LombokImmutableBean.of("hi", 5))
+            .addEqualityGroup(LombokImmutableBean.of(null, 0), LombokImmutableBean.of(null, 0))
+            .testEquals();
     }
 
     @Test

@@ -15,11 +15,11 @@ public class GoodBeanTest {
     @Test
     public void testClassIsGoodBean() {
         assertThat(GoodBean.class, allOf(
-                hasValidBeanConstructor(),
-                hasValidGettersAndSetters(),
-                hasValidBeanHashCodeFor("anInt"),
-                hasValidBeanEqualsFor("anInt"),
-                hasValidBeanToString()
+            hasValidBeanConstructor(),
+            hasValidGettersAndSetters(),
+            hasValidBeanHashCodeFor("anInt"),
+            hasValidBeanEqualsFor("anInt"),
+            hasValidBeanToString()
         ));
     }
 
@@ -27,7 +27,6 @@ public class GoodBeanTest {
     public void testClassIsSerializable() {
         SerializableTester.reserializeAndAssert(new GoodBean());
     }
-
 
 
 }

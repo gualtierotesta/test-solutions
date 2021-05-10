@@ -1,66 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    <parent>
-        <groupId>it.gualtierotesta</groupId>
-        <artifactId>test-solutions</artifactId>
-        <version>2.0.0</version>
-    </parent>
-    
-    <artifactId>mockito2</artifactId>
-    <packaging>jar</packaging>
-    <name>Mockito 2</name>
-    
-     <properties>
-        <java.version>1.8</java.version>
-    </properties>
-    
-     <dependencies>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>LATEST</version>
-            <scope>test</scope>
-            <type>jar</type>
-        </dependency>
-          <dependency>
-               <groupId>junit</groupId>
-               <artifactId>junit</artifactId>
-               <version>4.12</version>
-               <scope>test</scope>
-          </dependency>
-           <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>LATEST</version>
-            <scope>test</scope>
-        </dependency>
-         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.10</version>
-            <scope>test</scope>
-            <type>jar</type>
-        </dependency>
-          <dependency>
-               <groupId>org.seleniumhq.selenium</groupId>
-               <artifactId>selenium-java</artifactId>
-               <scope>test</scope>
-               <version>3.141.59</version>
-          </dependency>
-          <dependency>
-               <groupId>com.opera</groupId>
-               <artifactId>operadriver</artifactId>
-               <scope>test</scope>
-               <version>1.5</version>
-               <exclusions>
-                    <exclusion>
-                         <groupId>org.seleniumhq.selenium</groupId>
-                         <artifactId>selenium-remote-driver</artifactId>
-                    </exclusion>
-               </exclusions>
-          </dependency>
-     </dependencies>
-    
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>it.gualtierotesta</groupId>
+    <artifactId>test-solutions</artifactId>
+    <version>2.0.0</version>
+  </parent>
+
+  <artifactId>mockito2</artifactId>
+  <packaging>jar</packaging>
+  <name>Mockito 2</name>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <mockito.version>3.9.0</mockito.version>
+    <assertj.version>3.19.0</assertj.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>${mockito.version}</version>
+      <scope>test</scope>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit4.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>${assertj.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+      <scope>test</scope>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <scope>test</scope>
+      <version>3.141.59</version>
+    </dependency>
+    <dependency>
+      <groupId>com.opera</groupId>
+      <artifactId>operadriver</artifactId>
+      <scope>test</scope>
+      <version>1.5</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-remote-driver</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+
 </project>

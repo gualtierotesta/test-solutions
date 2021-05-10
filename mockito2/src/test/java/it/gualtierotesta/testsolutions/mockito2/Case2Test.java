@@ -15,18 +15,20 @@
  */
 package it.gualtierotesta.testsolutions.mockito2;
 
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
 import org.apache.commons.lang3.RandomStringUtils;
-import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
-import static org.mockito.ArgumentMatchers.any;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import static org.mockito.Mockito.verify;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.verify;
 
 /**
  * Unit test for case 2
@@ -62,7 +64,7 @@ public class Case2Test {
         verify(dao).saveNewLoggedUser(capture.capture());
         User user = capture.getValue();
         assertThat(user.getTsLogin())
-                .isCloseTo(new Date(), TimeUnit.SECONDS.toMillis(2));
+            .isCloseTo(new Date(), TimeUnit.SECONDS.toMillis(2));
     }
 
 }

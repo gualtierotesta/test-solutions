@@ -16,11 +16,11 @@ public class LombokBeanTest {
     @Test
     public void testClassIsGoodBean() {
         assertThat(LombokBean.class, allOf(
-                hasValidBeanConstructor(),
-                hasValidGettersAndSetters(),
-                hasValidBeanHashCode(),
-                hasValidBeanEquals()
-                // commented out due to a possible bug hasValidBeanToString()
+            hasValidBeanConstructor(),
+            hasValidGettersAndSetters(),
+            hasValidBeanHashCode(),
+            hasValidBeanEquals()
+            // commented out due to a possible bug hasValidBeanToString()
         ));
     }
 

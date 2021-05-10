@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * A good JavaBean example
  */
-public class GoodBean implements Serializable{
+public class GoodBean implements Serializable {
 
     private String aStr;
     private int anInt;
@@ -45,8 +45,8 @@ public class GoodBean implements Serializable{
     @Override
     public String toString() {
         return "GoodBean{" +
-                "aStr='" + aStr + '\'' +
-                ", anInt=" + anInt +
-                '}';
+            "aStr='" + aStr + '\'' +
+            ", anInt=" + anInt +
+            '}';
     }
 }

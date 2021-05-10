@@ -19,9 +19,9 @@ public class ImmutableBeanTest {
     @Test
     public void testClassEqualsHashCode() {
         new EqualsTester()
-                .addEqualityGroup(new ImmutableBean("hi", 5), new ImmutableBean("hi", 5))
-                .addEqualityGroup(new ImmutableBean(null, 0), new ImmutableBean(null, 0))
-                .testEquals();
+            .addEqualityGroup(new ImmutableBean("hi", 5), new ImmutableBean("hi", 5))
+            .addEqualityGroup(new ImmutableBean(null, 0), new ImmutableBean(null, 0))
+            .testEquals();
     }
 
     @Test

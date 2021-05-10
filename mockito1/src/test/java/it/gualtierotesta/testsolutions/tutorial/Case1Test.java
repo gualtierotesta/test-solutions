@@ -15,11 +15,13 @@
  */
 package it.gualtierotesta.testsolutions.tutorial;
 
-import java.util.Random;
-import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
+
+import java.util.Random;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Unit test for Case 1

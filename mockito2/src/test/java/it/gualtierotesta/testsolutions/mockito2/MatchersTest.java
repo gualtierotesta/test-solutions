@@ -35,7 +35,7 @@ public class MatchersTest {
     public void testEq() throws Exception {
         // given
         int num = 5;
-        BDDMockito.given(dependency.toString(ArgumentMatchers.eq(num*2))).willReturn("ten");
+        BDDMockito.given(dependency.toString(ArgumentMatchers.eq(num * 2))).willReturn("ten");
         // when
         final String res = sut.info(num);
         // then
