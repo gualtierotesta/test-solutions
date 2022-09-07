@@ -29,7 +29,7 @@
 
   <organization>
     <name>Gualtiero Testa</name>
-    <url>https://gualtierotesta.wordpress.com</url>
+    <url>https://www.gualtierotesta.it</url>
   </organization>
 
   <issueManagement>
@@ -46,7 +46,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <java.version>1.6</java.version>
+    <java.version>1.8</java.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     <junit4.version>4.13.2</junit4.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
